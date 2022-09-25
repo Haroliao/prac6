@@ -3,10 +3,11 @@
 #include <string>
 
 class Individual{
-    public:
     //variables:
-    std::string binaryString="";
+    private:
+    std::string binaryString;
     //functions
+    public:
     Individual(int length);
     Individual (std::string DNA);
     std::string getString();
