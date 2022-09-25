@@ -20,6 +20,7 @@ int Individual::getBit(int pos){
     if (binaryString[pos]=='0'){
         return 0;
     }
+    return 0;
 }
 
 string Individual::getString(){
