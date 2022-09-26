@@ -10,24 +10,18 @@ Individual::Individual(int length){
    }
 }
 int Individual::getBit(int pos){
-     //int size=binaryString.length();
-    //if(pos>size){
-       // return -1;
-    //}
-    //if (binaryString[pos]=='1') {
-     //   return 1;
-      //  }
-    //if (binaryString[pos]=='0'){
-       // return 0;
-   // }
-   int size=binaryString.length();
-        if (pos<size && pos>-1){
-            return binaryString[pos];
+     int size=binaryString.length();
+    if(pos>size){
+       return -1;
+    }
+    if (binaryString[pos]=='1') {
+        return 1;
         }
-        else{
-            return -1;
-        }
-    return 0;
+    if (binaryString[pos]=='0'){
+        return 0;
+   }
+   return 0;
+   
 }
 
 string Individual::getString(){
