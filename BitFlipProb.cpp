@@ -11,7 +11,7 @@ Individual BitFlipProb::mutate (Individual A, int K){
       for (int x=0;x<A.getLength();x++){
         if (num==1){A.flipBit(x);continue;}
         if (num==0){A.flipBit(x);continue;}
-        double z=float(rand())/float(RAND_MAX);
+        double z=float(rand())/float(RAND_MAX+1.0);
         if (num>=z){
             A.flipBit(x);
         }
